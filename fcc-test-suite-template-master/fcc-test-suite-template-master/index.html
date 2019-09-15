@@ -11,7 +11,8 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This Survey will help us know how much you like chocolate.</p>
     <form id="survey-form">
-      
+      <input type="text" id="name" name="name" pattern="[a-zA-Z]{.5}" required>
+      <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
     </form>
     <script  src="js/index.js"></script>
   </body>
