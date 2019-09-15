@@ -12,13 +12,27 @@
     <p id="description">This Survey will help us know how much you like chocolate.</p>
     <form id="survey-form">
       <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" name="name" pattern="[a-zA-Z]{.5}" required>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z]{.5}" placeholder="Your Name" required>
       
       <label for="email" id="email-label">Email:</label>
-        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email@example.com" required>
       
-      <label for="age" id="number-label">Age:</label>
+      <label for="age" id="number-label" placeholder="i.e. 26">Age:</label>
         <input type="number" id="number" name="age" min="0" max="999">
+      
+      <select id="dropdown">
+        <option value="white chocolate">White chocolate</option>
+        <option value="dark chocolate">Dark chocolagte</option>
+        <option value="milk chocolate">Milk chocolate</option>
+
+      </select>
+      <span id="consistency">
+        <input type="radio" name="consistency" value="frozen"> "Frozen"
+        <br>
+        <input type="radio" name="consistency" value="melted"> "Melted"
+        <br>
+        <input type="radio" name="consistency" value="wrapped"> "Wrapped"
+      </span>
     </form>
     <script  src="js/index.js"></script>
   </body>
